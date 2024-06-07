@@ -68,35 +68,47 @@ ansible-inventory --list
 
 ansible cisco_routers -m ping
 
-12) 
+12) Lets build the playbook next, Playbooks are automation blueprints, in YAML format, that Ansible uses to deploy and configure managed nodes and can be further described as:
+
+Play
+An ordered list of tasks that maps to managed nodes in an inventory.
+
+Task
+A reference to a single module that defines the operations that Ansible performs.
+
+Module
+A unit of code or binary that Ansible runs on managed nodes. Ansible modules are grouped in collections with a Fully Qualified Collection Name (FQCN) for each module.
+
+vim etc/ansible/cisco_playbook.yaml
+
+
+
+---
+
+- name: My first Cisco Playbook (Show how long the router has been up)
+  hosts: cisco_routers
+  gather_facts: false
+
+  tasks:
+    - name: Show uptime of Cisco IOS routers
+      ios_command:
+        commands: show version | i uptime
+      register: output
+
+    - name: print output
+      debug:
+        var: output.stdout_lines
+
+
+- hosts calls the cisco_routers group we specified in our inventory file, this is what devices the playbook will be run against
+- gather_facts: false (we can use this to get information about the devices, this is turned on be default, so we have to turn it off with the command)
+- name: self explanatory, used to describe the playbook/tasks
+- ios_command: module used to run the cisco command
+- 
 
 
 
 
 
-
-
-
-
-10)
-11) Create your Project folder then go to your new folder:
-
-mkdir ansible_quickstart
-
-cd ansible_quickstart
-
-8) 
-9)
-10)
-11) Create a file named inventory.ini in the ansible_quickstart directory
-
-touch inventory.ini
-ls 
-
-9) Edit the inventory file and add the Cisco routers:
-
-
-
-10) 
 
 
