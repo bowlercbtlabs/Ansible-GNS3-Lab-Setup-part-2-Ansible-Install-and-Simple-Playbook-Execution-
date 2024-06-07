@@ -41,7 +41,7 @@ ls /etc/ansible
 
 8) you will see a "hosts" file, this is the default inventory location. Inventories organize managed nodes in centralized files that provide Ansible with system information and network locations. Using an inventory file, Ansible can manage a large number of hosts with a single command.
 
-9) Lets add Router 1,2 and 3 to the default inventory location:
+9) Lets add Routers 1,2 and 3 to the default inventory location along with our variables:
 
 vim /etc/ansible/hosts
 
@@ -60,7 +60,15 @@ ansible_connection=network_cli
 - R1 is the alias for the host with IP address 192.168.158.200
 - "cisco_routers:vars" is the group variables that we can use to tell ansible to use these credentials for all the devices inside the "cisco_routers" group. This helps further simplify our files by getting rid of repetative data entry.
 
-10) 
+10) verify the inventory file with the following command:
+
+ansible-inventory --list
+
+11) verify reachability to the routers by using the following ping command:
+
+ansible cisco_routers -m ping
+
+12) 
 
 
 
