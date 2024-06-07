@@ -25,7 +25,7 @@ https://www.packetswitch.co.uk/ansible-with-cisco/
 
 3) Verify you can ping from the Ubuntu Server to the Cisco devices
 
-4) Make note of the account you have on the Cisco devices (you will add this to your Ansible configuration when accessing the devices while running your playbook)
+4) Make note of the user account you have on the Cisco devices (you will add this to your Ansible configuration when accessing the devices while running your playbook)
 
 5) Install Ansible on the Ubuntu Server:
 
@@ -41,12 +41,26 @@ ls /etc/ansible
 
 8) you will see a "hosts" file, this is the default inventory location. Inventories organize managed nodes in centralized files that provide Ansible with system information and network locations. Using an inventory file, Ansible can manage a large number of hosts with a single command.
 
-9) Lets add Router 1 to the default location
+9) Lets add Router 1,2 and 3 to the default inventory location:
 
 vim /etc/ansible/hosts
 
-R1 ansible_host=192.168.158.200 
+[cisco_routers]
+R1 ansible_host=192.168.158.200
+R2 ansible_host=192.168.158.201
+R3 ansible_host=192.168.158.202
 
+[cisco_routers:vars]
+ansible_network_os=ios
+ansible_user=admin
+ansible_password=admin
+ansible_connection=network_cli
+
+- "cisco_routers" is the group name that we will call inside our playbook creation later
+- R1 is the alias for the host with IP address 192.168.158.200
+- "cisco_routers:vars" is the group variables that we can use to tell ansible to use these credentials for all the devices inside the "cisco_routers" group. This helps further simplify our files by getting rid of repetative data entry.
+
+10) 
 
 
 
