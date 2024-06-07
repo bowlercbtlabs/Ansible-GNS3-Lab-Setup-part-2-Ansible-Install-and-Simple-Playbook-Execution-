@@ -10,3 +10,6 @@ In this video I configure and explain the following:
 - Configuration of an ansible playbook
 - Run ansible playbook against multiple Cisco devices
   
+use this guide:
+
+https://docs.ansible.com/ansible/latest/getting_started/index.html
