@@ -13,3 +13,7 @@ In this video I configure and explain the following:
 use this guide:
 
 https://docs.ansible.com/ansible/latest/getting_started/index.html
+
+and this guide:
+
+https://www.packetswitch.co.uk/ansible-with-cisco/
