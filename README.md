@@ -29,15 +29,29 @@ https://www.packetswitch.co.uk/ansible-with-cisco/
 
 5) Install Ansible on the Ubuntu Server:
 
-sudo apt install ansible
+apt-add-repository ppa:ansible/ansible
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/e8ddc48d-13a2-41f9-a7ac-62199773b8e0)
+
+apt update
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/0df49b89-e44a-48ff-be5c-f32b52dc3aa3)
+
+apt install ansible
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/c26a3b0e-2d1b-41ef-94c9-bdb5dd26433e)
 
 6) After install verify ansible with the following command:
 
 ansible --version
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/aa4b1f2b-42cd-49bd-a06c-926198444c21)
+
 7) perform and ls to see all the files created in the default ansible directory:
 
 ls /etc/ansible
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/312f8980-8323-4c37-9297-0ca71bc5e75a)
 
 8) you will see a "hosts" file, this is the default inventory location. Inventories organize managed nodes in centralized files that provide Ansible with system information and network locations. Using an inventory file, Ansible can manage a large number of hosts with a single command.
 
