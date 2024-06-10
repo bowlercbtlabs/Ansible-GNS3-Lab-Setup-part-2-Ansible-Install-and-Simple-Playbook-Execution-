@@ -66,11 +66,12 @@ R3 ansible_host=192.168.158.202
 
 [cisco_routers:vars]
 ansible_network_os=ios
-ansible_user=admin
-ansible_password=admin
+ansible_user=steve
+ansible_password=password
 ansible_connection=network_cli
 
-![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/d2830e88-5785-4039-a445-137e5e0ec4e7)
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/7c3974fd-b315-4b12-a882-3c0c0e9d6fba)
+
 
 - "cisco_routers" is the group name that we will call inside our playbook creation later
 - R1 is the alias for the host with IP address 192.168.158.200
@@ -133,6 +134,11 @@ vim etc/ansible/cisco_playbook.yaml
 - ios_command: module used to run the cisco command
 - 
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/1ba02bd8-5acf-458a-8203-39e6cdc3c4e7)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/1da2233d-d752-483e-8497-788f2b5e62b2)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/70fac2c4-2d78-42cb-b958-15a7ce774a26)
 
 
 
