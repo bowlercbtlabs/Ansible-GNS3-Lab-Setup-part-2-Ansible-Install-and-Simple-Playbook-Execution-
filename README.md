@@ -82,14 +82,19 @@ ansible_connection=network_cli
 
 10) Power on the devices inside GNS3 now
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/252ef660-e757-4ffe-879b-ce253ed8acf2)
 
 12) verify the inventory file with the following command:
 
 ansible-inventory --list
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/0e17e1d3-523f-48fd-b871-9f69243a2483)
+
 11) verify reachability to the routers by using the following ping command:
 
 ansible cisco_routers -m ping
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/5fa020b3-af31-48d7-b695-f9d116cb82c6)
 
 12) Lets build the playbook next, Playbooks are automation blueprints, in YAML format, that Ansible uses to deploy and configure managed nodes and can be further described as:
 
