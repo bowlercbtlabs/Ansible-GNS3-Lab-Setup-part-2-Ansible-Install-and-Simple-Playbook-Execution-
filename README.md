@@ -146,7 +146,7 @@ vim etc/ansible/cisco_playbook.yaml
 
 ![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/d4ae1ecb-77ba-4e68-ad8c-0d9f5d9c5f3c)
 
-![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/7981c8db-34eb-497b-b6cd-e6f95ead3308)
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/c6625284-c20b-4022-86a5-a06d553ec982)
 
 ![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/d0f21e9f-6dd4-44f6-a0a2-b6ffb3d79870)
 
