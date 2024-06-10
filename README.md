@@ -110,6 +110,7 @@ A unit of code or binary that Ansible runs on managed nodes. Ansible modules are
 
 vim etc/ansible/cisco_playbook.yaml
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/e853fd60-9f82-44a7-908e-7dc70f45517a)
 
 ---
 
@@ -141,7 +142,16 @@ vim etc/ansible/cisco_playbook.yaml
 ![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/70fac2c4-2d78-42cb-b958-15a7ce774a26)
 
 
+13) We can add another play to our playbook to include the Version of the router as well
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/d4ae1ecb-77ba-4e68-ad8c-0d9f5d9c5f3c)
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/7981c8db-34eb-497b-b6cd-e6f95ead3308)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/d0f21e9f-6dd4-44f6-a0a2-b6ffb3d79870)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/07b10b2a-980b-47d6-a914-2c2ec4307b67)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/794f4e40-c7dc-4480-87d4-05303b2372f3)
 
 
