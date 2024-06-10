@@ -162,4 +162,11 @@ vim etc/ansible/cisco_playbook.yaml
 
 ![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/2c55c720-160f-47e6-959f-eb4ed2611662)
 
+15) Last thing we can do is show the IP address assigned to the router in which we are connecting to for verification:
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/0511eb05-f368-4ec2-a605-0be126ad4c4d)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/eed722ca-55fd-47ef-be55-88c223452913)
+
+16) That's it! Your first Ansible Playbook has been completed!
 
