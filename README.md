@@ -73,8 +73,15 @@ ansible_connection=network_cli
 - "cisco_routers" is the group name that we will call inside our playbook creation later
 - R1 is the alias for the host with IP address 192.168.158.200
 - "cisco_routers:vars" is the group variables that we can use to tell ansible to use these credentials for all the devices inside the "cisco_routers" group. This helps further simplify our files by getting rid of repetative data entry.
+- ansible_network_os - set to match your network platform you are communicating with
+- ansible_user - the user account used to login to the host
+- ansible_password - the password used to loing to the target host
+- ansible_connection - the protocol/port used to connect to the target host
 
-10) verify the inventory file with the following command:
+10) Power on the devices inside GNS3 now
+
+
+12) verify the inventory file with the following command:
 
 ansible-inventory --list
 
@@ -94,7 +101,6 @@ Module
 A unit of code or binary that Ansible runs on managed nodes. Ansible modules are grouped in collections with a Fully Qualified Collection Name (FQCN) for each module.
 
 vim etc/ansible/cisco_playbook.yaml
-
 
 
 ---
