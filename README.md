@@ -9,23 +9,23 @@ In this video I configure and explain the following:
 - Configuration of ansible variables
 - Configuration of an ansible playbook
 - Run ansible playbook against multiple Cisco devices
-  
-use this guide:
-
-https://docs.ansible.com/ansible/latest/getting_started/index.html
-
-and this guide:
-
-https://www.packetswitch.co.uk/ansible-with-cisco/
 
 
 1) Open GNS3 and open the Ansible GNS3 Lab Setup part 1 project:
 
-2) Power on all the devices, Ubuntu Server and Cisco devices
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/54074f43-f0dd-4b5f-ab01-c7cc2136ccce)
+
+2) Power on all the devices (Ubuntu Server and Cisco devices)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/0bbd72f4-094a-429b-91d9-731f47d1d6a9)
 
 3) Verify you can ping from the Ubuntu Server to the Cisco devices
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/a2ac543f-82ad-4a6f-ae5b-e45ddd631abb)
+
 4) Make note of the user account you have on the Cisco devices (you will add this to your Ansible configuration when accessing the devices while running your playbook)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/812606e1-2e57-4069-81ff-76d8f4a14069)
 
 5) Install Ansible on the Ubuntu Server:
 
@@ -57,6 +57,10 @@ ls /etc/ansible
 
 9) Lets add Routers 1,2 and 3 to the default inventory location along with our variables:
 
+- If you haven't already, install VIM:
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/89e4f50c-711b-4d1f-8b0c-b899070853e8)
+
 vim /etc/ansible/hosts
 
 [cisco_routers]
@@ -81,11 +85,7 @@ ansible_connection=network_cli
 - ansible_password - the password used to loing to the target host
 - ansible_connection - the protocol/port used to connect to the target host
 
-10) Power on the devices inside GNS3 now
-
-![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/252ef660-e757-4ffe-879b-ce253ed8acf2)
-
-12) verify the inventory file with the following command:
+10) verify the inventory file with the following command:
 
 ansible-inventory --list
 
@@ -129,11 +129,14 @@ vim etc/ansible/cisco_playbook.yaml
         var: output.stdout_lines
 
 
-- hosts calls the cisco_routers group we specified in our inventory file, this is what devices the playbook will be run against
+- hosts: calls the cisco_routers group we specified in our inventory file, this is what devices the playbook will be run against
 - gather_facts: false (we can use this to get information about the devices, this is turned on be default, so we have to turn it off with the command)
 - name: self explanatory, used to describe the playbook/tasks
 - ios_command: module used to run the cisco command
-- 
+- commands: self explanatory, which commands you are going to perform
+- register: saving output of command data
+- debug: prints statements during playbook execution
+- var: When stdout is returned, Ansible always provides a list of strings, each containing one item per line from the original output
 
 ![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/1ba02bd8-5acf-458a-8203-39e6cdc3c4e7)
 
