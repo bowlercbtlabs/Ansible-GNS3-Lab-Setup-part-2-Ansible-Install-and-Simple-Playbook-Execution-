@@ -89,7 +89,7 @@ ansible_connection=network_cli
 
 ansible-inventory --list
 
-![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/0e17e1d3-523f-48fd-b871-9f69243a2483)
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/9dee80b8-2609-4646-863f-30b9c08dbfec)
 
 11) verify reachability to the routers by using the following ping command:
 
