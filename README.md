@@ -154,4 +154,12 @@ vim etc/ansible/cisco_playbook.yaml
 
 ![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/794f4e40-c7dc-4480-87d4-05303b2372f3)
 
+14) Another way to write the two plays so that they are shown together is:
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/5d3f09b8-9704-4e91-8d47-6373d1f2bd8a)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/0be2776d-d804-4d5e-b725-0a919266152e)
+
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/2c55c720-160f-47e6-959f-eb4ed2611662)
+
 
