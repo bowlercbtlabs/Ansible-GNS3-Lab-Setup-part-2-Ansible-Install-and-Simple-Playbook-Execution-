@@ -70,6 +70,8 @@ ansible_user=admin
 ansible_password=admin
 ansible_connection=network_cli
 
+![image](https://github.com/bowlercbtlabs/Ansible-GNS3-Lab-Setup-part-2-Ansible-Install-and-Simple-Playbook-Execution-/assets/120626722/d2830e88-5785-4039-a445-137e5e0ec4e7)
+
 - "cisco_routers" is the group name that we will call inside our playbook creation later
 - R1 is the alias for the host with IP address 192.168.158.200
 - "cisco_routers:vars" is the group variables that we can use to tell ansible to use these credentials for all the devices inside the "cisco_routers" group. This helps further simplify our files by getting rid of repetative data entry.
